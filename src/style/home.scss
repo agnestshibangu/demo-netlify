@@ -1,0 +1,230 @@
+//@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200&family=Merriweather:ital@1&family=Roboto&display=swap');
+
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: none;
+}
+
+.home-container {
+    width: 100%;
+    height: fit-content;
+}
+
+.header-container-image {
+    width: 100%;
+    height: fit-content;
+    object-fit: cover;
+ 
+}
+
+.collections-container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.collection-title-box {
+    margin-top: 15px;
+}
+
+.collections-top-bar {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+
+.collections-title-bar {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    font-size: 1.5rem;
+    margin-top: -7px;
+}
+
+.collections-title {
+    font-family: 'Jost', sans-serif;
+    letter-spacing: 0.15rem;
+}
+
+
+
+.collections-grid {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+   justify-content: space-around;
+    margin: 60px auto;
+}
+
+.collection-item {
+    margin: 1.5em;
+    width: 20%;
+    height: 250px;
+    border-radius: 10px;
+    transition: 0.7s;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    position: relative;
+    box-shadow: inset 0rem -3.5rem 56px black;
+}
+
+.active {
+    width: 75%;
+}
+
+
+
+.header-container-image-title1, .header-container-image-title2 {
+    // text-align: center;
+    color: white;
+    // position: absolute;
+    font-size: 1rem;
+    font-family: 'Jost', sans-serif;
+}
+
+.inner-text-container {
+    position: absolute;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+  text-align: center;
+}
+
+.box-header-overlap {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// .header-container-image-title2 {
+//     font-size: 30px;
+//     top: 75%;
+// }
+
+////// breakpoint /////
+
+/// 
+
+
+@media (min-width: 925px) {
+    .header-container-image-title1 {
+        font-size: 4rem;
+        letter-spacing: 0.25rem;
+    }
+
+    .header-container-image-title2 {
+        font-size: 2rem;
+        letter-spacing: 0.25rem;
+    }
+
+    .inner-text-container {
+        margin-top: -60px;
+    }
+}
+
+@media (max-width: 925px) {
+    .inner-text-container {
+        width: 100%;
+    }
+
+    .header-container-image-title1 {
+        font-size: 3.7rem;
+        letter-spacing: 0.20rem;
+    }
+
+    .header-container-image-title2 {
+        font-size: 1.7rem;
+        letter-spacing: 0.20rem;
+    }
+
+    .inner-text-container {
+        margin-top: -40px;
+    }
+
+    .inner-text-container {
+        margin-top: -65px;
+    } 
+
+    
+}
+
+///
+
+
+@media (max-width: 900px) {
+    .collections-grid {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+    }
+
+    .collection-item {
+        width: 80%;
+        height: 65px;
+    }
+
+    .active {
+        height: 200px;
+    }
+
+}
+
+
+///
+
+@media (max-width: 525px) {
+    .inner-text-container {
+        width: 80%;
+    }
+
+    .header-container-image-title1 {
+        font-size: 1.5rem;
+        letter-spacing: 0.20rem;
+    }
+
+    .header-container-image-title2 {
+        font-size: 0.75rem;
+        letter-spacing: 0.20rem;
+    }
+
+    .header-container-image {
+        margin-top: 10px;
+    }
+
+    .inner-text-container {
+        margin-top: -20px;
+    }
+}
+
+///  
+
+@media (max-width: 340px) {
+
+    .header-container-image {
+      height: 200px;
+    }
+
+    .header-container-image-title1 {
+        font-size: 1.2rem;
+        letter-spacing: 0.20rem;
+    }
+    .header-container-image-title2 {
+        font-size: 0.7rem;
+        letter-spacing: 0.20rem;
+    }
+
+}

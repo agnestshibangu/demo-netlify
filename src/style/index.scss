@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: white;
+}
+
+::-webkit-scrollbar {
+  background-color: rgba(255, 255, 255, 0)
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f102;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black; 
+  // border-radius: 15px;
+  height: 50px;
+}

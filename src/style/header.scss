@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200&display=swap');
+
+
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: none;
+}
+
+.header-container {
+    width: 100%;
+    height: fit-content;
+    
+} 
+
+.header-container-image{}
+
+.header-bar {
+    width: 100%;
+    min-height: 50px;
+    height: fit-content;
+    background-color: black;
+    color: white; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.header-navbar {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0);
+    
+}
+
+
+.navbar-artist-name {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 700;
+    text-decoration: none;
+    &:visited {
+        color: black
+    }
+    &:hover {
+        color: rgb(56, 56, 56);
+    }
+}
+
+ 
+
+
+.navbar-buttons {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 10px;
+}
+
+.navbar-header-bar {
+    height: 1px;
+    width: 100%;
+    background-color: grey;
+    
+}
+
+.navbar-buttons-icon {
+    font-size: 2rem;
+    cursor: pointer; 
+}
+
+.cart-icon {
+    margin-left: 4%;
+    font-size: 2rem;
+    color: black
+    
+ }
+
+.open-close-box {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger-icon { 
+    position: absolute;
+    font-size: 1.8rem;
+}
+
+.close-icon {
+    font-size: 1.6rem;
+}
+
+.header-top-animation {
+    width: 100%;
+    height: fit-content;
+    // position: absolute; 
+    // z-index: 10;
+}
+
+.header-right-side {
+    display: flex;
+    align-items: center;
+    width: 90px;
+    position: absolute;
+    right: 0%;
+    
+}
+
+.search-box {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    border: 2px solid black;
+    padding: 3%;
+}
+
+.search-bar {
+    width: 70%;
+    transition: 1s;
+    border: none;
+    &:focus{
+        outline: none;
+    }
+}
+
+
+
+.menu {
+    overflow: hidden;
+    z-index: 0;
+    width: 100%;
+    height: fit-content;
+    background-color: rgba(255, 255, 255, 0);
+    // animation: menuanimation 1s ease;
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.menu-section {
+    width: 100%;
+}
+
+.menu-laptop {
+    display: none;
+}
+
+.display-none {
+    display: none;
+}
+
+// @keyframes menuanimation {
+//     0% {
+//         transform: translateY(-100%);
+//     }
+
+//     100% {
+//         transform: translateY(0);
+//     }
+// }
+
+.link-menu {
+    margin: 10px 20px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    letter-spacing: 0.15rem;
+    &:hover {
+        color: black;
+    }
+    &:active {
+        text-decoration: underline;
+    }
+}
+
+
+.cart-icon-number {
+    width: 17px;
+    height: 17px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    border-radius: 50%;
+    right: 55px;
+}
+
+//////////////////////////// BREAKPOINT 960px ////////////////////////////
+
+@media (min-width: 960px) {
+
+    .hamburger-icon, .close-icon { 
+        display: none;
+    }
+
+}
+
+@media (min-width: 525px) {
+
+.menu-laptop {
+    display: flex;
+    width: 100%;
+    height: 8vh;
+    background-color: rgba(255, 255, 255, 0);
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    display: none;
+}
+
+}
+
+
+//////////////////////////// BREAKPOINT 525px ////////////////////////////
+
+@media (max-width: 525px) {
+    .navbar-artist-name {
+        width: 50%;
+        font-size: 15px;
+    }
+
+    .cart-icon {
+        font-size: 1.8rem;
+    }
+
+    .cart-icon-number {
+        right: 5px;
+    }   
+
+    .header-right-side {
+        right: 3%;
+        justify-content: space-around;
+    }
+    
+    .open-close-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4px;
+    }
+    
+    .menu-laptop {
+        display: none;
+    }
+}
